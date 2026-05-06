@@ -104,21 +104,27 @@ header section {
 
 h3 {
     color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
 }
 
 div span {
     -webkit-text-stroke: 1px white;
-    font-weight: 500;
-    font-size: 100px;
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+    font-size: 6.25rem;
     position: relative;
-    right: 26.5px;
+    right: 23px;
 }
 
 div.cards {
-    width: 214px;
-    height: 300px;
+    width: 180px;
+    height: 252px;
     display: flex;
     align-items: flex-end;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
 }
 main {
     padding: 0 10vw;
@@ -138,4 +144,46 @@ main {
 #show4{
     background: url(./assets/card1-4.webp) center no-repeat;
     background-size: cover;
+}
+
+#more-reasons {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.reasons-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    color: rgba(187, 187, 194, 1);
+    width: 230px;
+    height: 329px;
+    border-radius: 1rem;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+h4 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+}
+
+details {
+    background-color: rgba(45, 45, 45, 1);
+    color: white;
+    margin-bottom: 5px;
+    display: flex;
+    width: 60.5rem;
+    height: 5rem;
+    padding: 1.5rem;
 }
