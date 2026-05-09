@@ -35,7 +35,7 @@ header > * {
     color: white;
 }
 header {
-    background: linear-gradient(rgba(0,0,0, 1), rgba(0,0,0,.5), rgba(0,0,0, 1)),
+    background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,.5), rgba(0,0,0, 0.9)),
                      url(./assets/background.jpg) center no-repeat;
     background-size: cover;
     flex-direction: column;
@@ -51,29 +51,36 @@ header div {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 35%;
+    text-align: center;
+    top: 20%;
+    width: 60vw;
+    margin-bottom: 1rem;
 }
 
 h1 {
     font-weight: 900;
     font-size: 3.5rem;
+    margin-bottom: 1rem;
+    align-items: center;
 }
+
 h5 {
     font-size: larger;
     font-weight: bold;
+    margin-bottom: 2rem;
 }
 
 header section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 50vw;
+    width: 75vw;
 }
 
 #get-started {
     width: unset;
     position: relative;
-    top: 35%;
+    top: 20%;
 }
 
 .get-started-btn {
@@ -96,20 +103,36 @@ header section {
     background-color: rgba(0,0,0,.5);
 }
 
+.curved-border {
+    height: 10vh;
+    width: 100vw;
+    background: linear-gradient(to right,#0000, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1),#0000); 
+    clip-path: ellipse(60% 100% at bottom);
+    position: relative; 
+    mask: radial-gradient(62% 95% at bottom, #0000 98%, #000);
+}
+/* .curve-container {
+    background: radial-gradient(ellipse at 50% 0, blue, black);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+
+
+} */
+
 #trending-now {
     display: flex;
     gap: 100px;
-    
 }
 
 h3 {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom:1.5rem;
 }
 
-div span {
+.numbers {
     -webkit-text-stroke: 1px white;
     text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
     font-weight: 800;
@@ -181,9 +204,53 @@ h4 {
 details {
     background-color: rgba(45, 45, 45, 1);
     color: white;
-    margin-bottom: 5px;
     display: flex;
+    margin-bottom: 5px;
     width: 60.5rem;
     height: 5rem;
     padding: 1.5rem;
+}
+
+.form-title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.email-input2 {
+    width: 562px;
+    height: 56px;
+    padding: 16px 16px 8px;
+    border-radius: 3px;
+    border: 1px solid #5e5e5f;
+    justify-content: center;
+    margin-right: 0.5rem;
+    background-color: rgba(15, 15, 15, 1);
+}
+
+footer {
+    display: flex;
+    /* width: 75vw; */
+    align-items: center;
+}
+
+.call {
+    display: flex;
+   
+   
+    color: rgba(179, 179, 179, 1);
+    
+    /* padding-left: 148px; */
+}
+
+#faq {
+    margin-bottom: 4rem;
+
 }
