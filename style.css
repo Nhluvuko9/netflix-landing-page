@@ -211,6 +211,10 @@ details {
     padding: 1.5rem;
 }
 
+#faq {
+    margin-bottom: 4rem;
+}
+
 .form-title {
     display: flex;
     justify-content: center;
@@ -223,6 +227,7 @@ form {
     align-items: center;
     justify-content: center;
     color: white;
+    margin-bottom: 5.5rem;
 }
 .email-input2 {
     width: 562px;
@@ -237,20 +242,66 @@ form {
 
 footer {
     display: flex;
-    /* width: 75vw; */
-    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 148px;
 }
 
 .call {
     display: flex;
-   
-   
+    font-size: 14px;
     color: rgba(179, 179, 179, 1);
-    
-    /* padding-left: 148px; */
+    margin-bottom: 1.25rem;
 }
 
-#faq {
+footer ul li:hover {
+    cursor: pointer;
+}
+.footer-links li {
+    font-size: 14px;
+    line-height: 2rem;
+    text-decoration: underline; 
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-items {
+    justify-content: space-between; 
+    align-items: flex-start;
     margin-bottom: 4rem;
-
 }
+.footer-links {
+    list-style-type: none;
+    columns: 4;
+    padding: 0;  
+}
+
+.languages {
+    width: 124px;
+    height: 2rem;
+    padding: 6px 36px 6px 34px;
+    border: 0.5px solid #5e5e5e;
+    border-radius: 5px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.material-icons {
+    color: white;
+}
+
+select {
+    margin-bottom: 3rem;
+}
+
+h6 {
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 1.5rem;
+    font-size: 0.855rem;
+    font-weight: 550;
+}
+footer p {
+    color: rgba(184, 183, 183, 0.7);
+    font-size: 0.775rem;
+    padding-bottom: 96px;
+}
+
