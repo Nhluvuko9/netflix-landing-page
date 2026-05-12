@@ -30,6 +30,12 @@ body {
     height: 2rem;
     width: 76.91px;
 }
+.sign-in-btn:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 1;
+    background-color: rgb(203, 11, 11);
+}
 
 header > * {
     color: white;
@@ -87,9 +93,25 @@ header section {
     background-color: rgb(229,9,20);
     color: white;
     border: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
     border-radius: 3px;
     width: 213.25px;
     height: 56px;
+}
+#chevron-right {
+    display: flex;
+    justify-content: center;
+    margin: 4px 10px;
+}
+.get-started-btn:hover {
+    transition: 0.3s;
+    cursor: pointer;
+    opacity: 1;
+    background-color: rgb(193, 17, 25);
 }
 
 .email-input {
@@ -123,6 +145,9 @@ header section {
 #trending-now {
     display: flex;
     gap: 100px;
+    position: relative;
+    width: 100%;
+    overflow: hidden
 }
 
 h3 {
@@ -149,6 +174,15 @@ div.cards {
     border-radius: 0.5rem;
     margin-bottom: 4rem;
 }
+.cards {
+    display: flex;
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    gap: 10px;
+    padding: 20px;
+    scrollbar-width: none;
+}
+
 main {
     padding: 0 10vw;
 }
@@ -164,9 +198,32 @@ main {
     background: url(./assets/card1-3.webp) center no-repeat;
     background-size: cover;
 }
-#show4{
+#show4 {
     background: url(./assets/card1-4.webp) center no-repeat;
     background-size: cover;
+}
+#show5 {
+    background: url(./assets/card1-5.webp) center no-repeat;
+    background-size: cover;
+    overflow-x: auto;
+}
+
+.carousel {
+    background: rgba(26, 26, 26, 1);
+    height: 7.5rem;
+    width: 1.5rem;
+    padding: 0;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    cursor: pointer;
+}
+.carousel:hover {
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 #more-reasons {
@@ -205,10 +262,45 @@ details {
     background-color: rgba(45, 45, 45, 1);
     color: white;
     display: flex;
-    margin-bottom: 5px;
-    width: 60.5rem;
-    height: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    height: auto;
+}
+details:hover {
+    transition: 0.2s;
+    background-color: rgba(75, 75, 75, 0.8);
+    cursor: pointer;
+}
+details[open] summary span {
+    transform: rotate(45deg);
+}
+details p {
+    background: rgba(45, 45, 45, 1);
     padding: 1.5rem;
+    margin-top: 1px;
+    font-size: 1.5rem;
+    border-top: 1.5px solid black;
+    width: 100%;
+    text-align: left;
+}
+
+summary {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+}
+summary span {
+    display: flex;
+    font-size: 3.75rem;
+    font-weight: lighter;
+    margin-left: auto;
+    transition: transform 0.3s ease;
 }
 
 #faq {
@@ -252,7 +344,7 @@ footer {
     display: flex;
     font-size: 14px;
     color: rgba(179, 179, 179, 1);
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 footer ul li:hover {
@@ -275,7 +367,7 @@ footer ul li:hover {
     padding: 0;  
 }
 
-.languages {
+.languages > select {
     width: 124px;
     height: 2rem;
     padding: 6px 36px 6px 34px;
@@ -285,12 +377,8 @@ footer ul li:hover {
     color: #ffffff;
 }
 
-.material-icons {
+.translate-icon {
     color: white;
-}
-
-select {
-    margin-bottom: 3rem;
 }
 
 h6 {
@@ -302,6 +390,9 @@ h6 {
 footer p {
     color: rgba(184, 183, 183, 0.7);
     font-size: 0.775rem;
-    padding-bottom: 96px;
 }
 
+.legal {
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
