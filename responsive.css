@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px) {
+    body {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    } 
+    h1 {
+        font-size: 3.5rem;
+    }
+    h5 {
+        font-size: larger;
+    }
+    .banner-container {
+        width: 50%;
+    } 
+    .get-started-btn {
+        width: 213.25px;
+        font-size: 1.4rem;   
+    }
+    .email-input {
+        width: 366.75px;
+        
+    }
+    header {
+        background-size: cover;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 1300px;
+        height: 100vh; 
+    }
+    header section {
+        padding: 0 12%;
+        width: 100%;
+    }
+    .reasons-cards {
+        flex-direction: column;
+        width: 230px;
+        height: 329px;
+    }
+}

@@ -11,6 +11,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 
@@ -205,14 +206,13 @@
 
         <section>
             <div  class="languages">
-                <select name="languages" >
-                    <!-- <i class="material-icons">translate</i> -->
-                    <img src="./assets/translate-2-svgrepo-com.svg" alt="translate" class="translate-icon">
-                    <option value="English">
-                        <img src="./assets/translate-2-svgrepo-com.svg" alt="translate" class="translate-icon">
-                        English
-                    </option>
+                <div role="img" aria-hidden="true" class="translate"><svg viewBox="0 0 16 16" width="16" height="16" data-icon="LanguagesSmall" data-icon-id=":Rhimld9qlbanb96:" id="language-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="white" role="img"><path fill="currentColor" fill-rule="evenodd" d="M10.77 5.33 10.5 6 9.34 8.94l-.57 1.44L7.33 14h1.78l.73-1.97h3.58l.74 1.97H16l-3.43-8.67zm-.15 4.6-.24.63h2.51l-1.26-3.35zm-1.1-5.09.1-.19h-3.2V2h-1.5v2.65H.55V6h3.77A11 11 0 0 1 0 10.43c.33.28.81.8 1.05 1.16 1.5-.91 2.85-2.36 3.88-4.02v5.1h1.49V7.52q.6.95 1.33 1.8l.57-1.43a12 12 0 0 1-1.34-1.9h2.09z" clip-rule="evenodd"></path></svg>
+                </div>
+                
+                <select id="language" name="LanguageSelect" data-uia="language-picker" data-wct-form-control-element="true" fdprocessedid="0wv3ff">
+                    <option lang="en" label="English" value="en-ZA" selected="">English</option>
                 </select>
+
             </div>
         </section>
 
