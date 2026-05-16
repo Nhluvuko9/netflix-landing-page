@@ -1,42 +1,124 @@
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     body {
         width: 100%;
-        max-width: 1300px;
-        margin: 0 auto;
-    } 
+    }
+
+    main {
+        padding: 0 10vw;
+    }
+
+    #netflix-logo {
+        width: 148px;
+    }
+
+    header section {
+        padding: 0 12%;
+    }
+
     h1 {
         font-size: 3.5rem;
     }
+
     h5 {
-        font-size: larger;
+        font-size: 1.5rem;
     }
+
     .banner-container {
         width: 50%;
+        padding-top: 9%;
     } 
-    .get-started-btn {
-        width: 213.25px;
-        font-size: 1.4rem;   
+
+    #get-started {
+        flex-direction: row;
+        gap: 0;
+        padding-bottom: 3rem;
     }
+
+    .get-started-btn {
+        width: 213.25px;   
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
     .email-input {
         width: 366.75px;
-        
+        margin-right: 0.5rem;
     }
-    header {
-        background-size: cover;
-        flex-direction: column;
+
+    /* Trending Now */
+    h3 {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    #trending-now {
+        gap: 40px;
+        padding-bottom: 2rem;
+    }
+
+    .numbers {
+        font-size: 6.25rem;
+        right: 23px;
+    }
+
+    #show1, #show2, #show3, #show4, #show5 {
+        width: 180px;
+        height: 255px;
+    }
+
+    .overflow-container {
+       display: flex;
+    }
+
+    /* More Reasons */
+    #more-reasons {
         display: flex;
-        align-items: center;
-        width: 100%;
-        max-width: 1300px;
-        height: 100vh; 
+        flex-direction: row;
+        gap: 20px;
     }
-    header section {
-        padding: 0 12%;
-        width: 100%;
+
+    .reasons-card {
+        height: 150px;
     }
-    .reasons-cards {
-        flex-direction: column;
-        width: 230px;
-        height: 329px;
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* FAQ */
+    summary, details p {
+        font-size: 1.5rem;
+    }
+
+    summary span {
+        font-size: 3.75rem;
+    }
+
+    form {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .email-input2 {
+        width: 562px;
+        margin-right: 0.5rem;
+    }
+
+     /* Footer */
+    footer {
+        padding: 0 10vw;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .languages > select {
+        left: 10vw;
     }
 }
