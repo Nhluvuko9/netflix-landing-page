@@ -4,7 +4,7 @@
     }
 
     main {
-        padding: 0 10vw;
+        padding: 0 148px;
     }
 
     #netflix-logo {
@@ -16,7 +16,7 @@
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 3.25rem;
     }
 
     h5 {
@@ -31,7 +31,7 @@
     #get-started {
         flex-direction: row;
         gap: 0;
-        padding-bottom: 3rem;
+        padding-bottom: 3.75rem;
     }
 
     .get-started-btn {
@@ -52,8 +52,7 @@
     }
 
     #trending-now {
-        gap: 40px;
-        padding-bottom: 2rem;
+        gap: 37px;
     }
 
     .numbers {
@@ -70,6 +69,18 @@
        display: flex;
     }
 
+    /* Video Section */
+    .tv-container {
+        width: 100%;
+    }
+    .tv-container img {
+        width: 100%;
+        height: auto;
+    }
+    video {
+        width: 80%;
+    }
+
     /* More Reasons */
     #more-reasons {
         display: flex;
@@ -77,22 +88,29 @@
         gap: 20px;
     }
 
-    .reasons-card {
-        height: 150px;
+    .reasons-cards {
+        height: 329px;
+        flex-direction: column;
     }
 
     h4 {
         font-size: 1.5rem;
     }
 
-    .icon {
+    .reasons-cards .icon {
         width: 75px;
         height: 75px;
+        left: 125px;
+        position: relative;
     }
 
     /* FAQ */
     summary, details p {
         font-size: 1.5rem;
+    }
+
+    summary {
+        padding: 0.25rem 1.5rem;
     }
 
     summary span {
@@ -109,7 +127,7 @@
         margin-right: 0.5rem;
     }
 
-     /* Footer */
+     /* Footer Section*/
     footer {
         padding: 0 10vw;
     }
@@ -120,5 +138,15 @@
 
     .languages > select {
         left: 10vw;
+    }
+
+    .translate {
+        position: absolute;
+        pointer-events: none;
+        width: 1rem;
+        height: 1rem;
+        left: 0.75rem;
+        right: auto;
+        z-index: 1;
     }
 }
